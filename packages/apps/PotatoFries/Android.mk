@@ -5,6 +5,7 @@ LOCAL_MODULE := PotatoFries
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 LOCAL_MODULE_TARGET_ARCH := arm arm64 x86_64
 my_src_arch := $(call get-prebuilt-src-arch,$(LOCAL_MODULE_TARGET_ARCH))
